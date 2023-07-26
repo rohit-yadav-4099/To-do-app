@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div id="task-list">
+            <h1 id="task">Tasks<span id="list">&nbspList</span></h1>
+            <h2 id="no-item">No Item in the todo list</h2>
+
+            <button class="Add addlistbutton" onclick="showtask()">+</button>
+            <a onclick="showtask()" id="buttonaddlist">Add Item</a>
+        </div>
+        <!-- parent container -->
+        <div class="card-container" id="card-container"></div>
+        <!-- pop up box -->
+    </div>
+    <div class="pop-up-box hide-box" id="popbox">
+        <h2 id="addnewlist">Add New List</h2>
+        <input type="text" placeholder="Add New List" id="card-name" autocomplete="">
+        <br><br>
+        <button class="card-button addcard" onclick="addCard()">Add</button>
+        <button class="card-button closecard" onclick="closepopupbox()">Close</button>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
