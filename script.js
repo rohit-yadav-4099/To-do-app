@@ -1,6 +1,9 @@
 const addTaskpopup = document.getElementById("popbox")
 const cardContainer =  document.getElementById("card-container")
-let popupTaskVisible = false
+const newCardname = document.getElementById("card-name")
+console.log(newCardname.parentNode)
+let cardID = 0
+// let popupTaskVisible = false
 
 ////***   togal form  */
 
@@ -16,15 +19,17 @@ let popupTaskVisible = false
 
 function showtask(){
     addTaskpopup.classList.remove("hide-box")
-    popupTaskVisible = true 
+    // popupTaskVisible = true 
 }
 
 function closepopupbox(){
     addTaskpopup.classList.add("hide-box")
-    popupTaskVisible = false
+    // popupTaskVisible = false
 }
 
 function addCard(){
+
+    cardID++;
     var newCard = document.createElement("div")
     var cardTitle = document.createElement("h2")
     var hrline = document.createElement("hr")
@@ -32,6 +37,8 @@ function addCard(){
     var deletebutton = document.createElement("button")
     var additem = document.createElement("button")
 
+    
+    newCard.setAttribute("id", cardID)
     newCard.classList.add("cards")
     hrline.classList.add("hrlines")
 
@@ -42,8 +49,10 @@ function addCard(){
     newCard.appendChild(additem)
     cardContainer.appendChild(newCard)
 
-    cardTitle.innerText = "this is card"
+    cardTitle.innerText = newCardname.value
     deletebutton.innerText = "delete"
     additem.innerText = "+"
+
+    closepopupbox()
 
 }
