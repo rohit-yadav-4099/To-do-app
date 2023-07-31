@@ -18,6 +18,10 @@
             <button class="Add addlistbutton" onclick="showtask()">+</button>
             <a onclick="showtask()" id="buttonaddlist">Add Item</a>
         </div>
+
+        <!-- parent container -->
+        <div class="card-container" id="card-container"></div>
+
     </div>
    
         <!-- pop up box -->
@@ -31,9 +35,16 @@
                                             
     </div>
 
-         <!-- parent container -->
-         <div class="card-container" id="card-container"></div>
-
+            <!-- pop up box - 2 -->
+     
+    <div class="popup-box2 hide-box" id="popbox2">
+        <h2 id="addnewitem">Add New Item</h2>
+        <input type="text" placeholder="Add New Item" id="item-name" autocomplete="">
+        <br><br>
+        <button class="card-button additem" onclick="showPopup2()">Add</button>
+        <button class="card-button closecard2" onclick="closepopupbox2()">Close</button>
+                                            
+    </div>
 
     <script src="./script.js"></script>
 </body>
