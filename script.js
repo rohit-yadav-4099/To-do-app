@@ -1,11 +1,16 @@
+
+
 const addTaskpopup = document.getElementById("popbox");
 // const main = document.getElementById("maincontainer")
 const cardContainer =  document.getElementById("card-container");
 const newCardname = document.getElementById("card-name");
-// console.log(newCardname.parentNode);
+console.log(newCardname.parentNode);
+
 // let noitem = document.getElementById("no-item");
-// let cardID = 0;
+let cardID = 0;
 // let start = 0;
+let additempopup = document.querySelector(".popup-box2");
+console.log(additempopup)
 
 
 function showtask(){
@@ -23,16 +28,16 @@ function showtask(){
     // mainContainer.classList.add("Main-container")
 }
 
+
 function closepopupbox(){
     addTaskpopup.classList.add("hide-box")
     // popupTaskVisible = false
-    // mainContainer.classList.add("Main-container")
-
+    // mainContainer.classList.add("blurpage")
 }
 
 function addCard(){
 
-//     cardID++;
+    cardID++;
     var newCard = document.createElement("div")
     var cardTitle = document.createElement("h2")
     var hrline = document.createElement("hr")
@@ -42,7 +47,7 @@ function addCard(){
     
 
     
-//     newCard.setAttribute("id", cardID)
+    newCard.setAttribute("id", cardID)
     newCard.classList.add("cards")
     hrline.classList.add("hrlines")
     additem.classList.add("addlist")
@@ -73,6 +78,50 @@ function addCard(){
         newCard.remove()
     });
 
+    closepopupbox()
+
+    
+    let newitemadd = document.querySelector("addlist");
+    let Itemid = 0;
+    additem.addEventListener("click",function additem(){
+
+        additempopup.classList.remove("hide-box");
+        addTaskpopup.classList.add("show");
+
+        function closepopupbox2(){
+            additem.classList.remove("hide-box");
+        }
+        closepopupbox2()
+        
+        // Itemid++;
+        // var newitem = document.createElement("div");
+        // var boxname = document.createElement("h2");
+        // var itemname = document.createElement("input");
+        // var add = document.createElement("button");
+        // var del = Document.createElement("button");
+
+        // newitem.appendChild(h2)
+        // newitem.appendChild(boxname)
+        // newitem.appendChild(itemname)
+
+        // newitem.classList.add("newitembox");
+        // boxname.classList.add("boxname");
+        // itemname.classList.add("itemlistname");
+    })
+
+
+    // const additempopup = document.getElementById("popbox2");
+
+    // function showPopup2(){
+    //     additempopup.classList.remove("hide-box");
+    // }
+
+    // function closepopupbox2(){
+    //     additempopup.classList.add("hide-box")
+    // }
+
+
+
     // function itempopup(itemlist){
 
     //     var itemtitle = document.createElement("h3");
@@ -90,6 +139,6 @@ function addCard(){
     //     itemlist.appendChild(itemtitle);
     // }
 
-    closepopupbox()
+    // closepopupbox()
 
 }
