@@ -69,6 +69,7 @@ body{
     border-radius: 10px;
     top: 40%;
     left: 40%;
+    z-index: 1;
 }
 .show{
     display: block;
@@ -136,13 +137,13 @@ input{
     height: 30px;
     position: absolute;
     font-size: 30px;
+    border-radius: 50%;
     border: 0px;
-    /* border-radius: 50%; */
-    /* text-align: center; */
-    /* background-color: #25bfee; */
     margin-top: 7.5em;
     margin-left: 1.5em;
-    background-image: url("./addicon2.png");
+    background-image: url("./addicon.png");
+    background-size: contain;
+    background-color: #ffffff;
 }
 
 .delcard{
@@ -151,8 +152,11 @@ input{
     height: 30px;
     object-fit: fill;
     border: 0px;
+    border-radius: 50%;
     margin-top: 17em;
     margin-left: 6.5em;
     background-image: url("./deleteicon.png");
+    background-size: contain;
+    background-color: #ffffff;
     
 }
