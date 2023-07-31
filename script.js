@@ -69,9 +69,9 @@ function addCard(){
     //     createItempopup("itemlist");
     // })
 
-    // deletebutton.addEventListener("click",function(){
-    //     newCard.remove()
-    // });
+    deletebutton.addEventListener("click",function(){
+        newCard.remove()
+    });
 
     // function itempopup(itemlist){
 
