@@ -39,7 +39,7 @@
     left:10vw;
     top:200px;
  }
- #cardnew{
+ #newcard{
     width: 150px;
     height: 25px;
     font-size: 20px;
@@ -63,7 +63,7 @@
       left: 2em;
   }
  
- .conatiner_child{
+ .cards{
     width: 250px;
    margin-left: 25px;
  }
@@ -104,41 +104,41 @@
     }
     #tasklist{
        position: relative;
-       left: 20px; 
-       font-size: 30px;
+       left: 2em; 
+       font-size: 40px;
     }
     #list{
-       font-size: 30px;
+       font-size: 40px;
    }
    #noitem{
     position: absolute;
     margin-top: 50px;
-    left: 50px;
-    font-size: 20px;
-    margin-top: 20px;
+    left: 3em;
+    font-size: 30px;
+    margin-top: 1em;
  
  }
  .addlistbutton{
-    height: 30px;
-    width: 30px;
-    font-size: 25px;
-    left: 10.3em;
+    height: 45px;
+    width: 45px;
+    font-size: 40px;
+    left: 13.3em;
     top: 1.2em;
  }
  #buttonaddlist{
-    left: 11.5em;
-    top: 1.1em; 
-    font-size: 25px;
+    left: 16.5em;
+    top: 1.3em; 
+    font-size: 35px;
  }
  .popupbox{
    
     position: fixed;
     height:160px;
     width:280px;
-    left:10vw;
-    top:100px;
+    left:30vw;
+    top:30vw;
  }
- #cardnew{
+ #newcard{
     width: 150px;
     height: 25px;
     font-size: 20px;
@@ -158,30 +158,32 @@
  }
  
  #box{
-      display: block;
-      left: 4em;
-  }
- .conatiner_child{
-   left: 2em;
+     display: flex;
+     flex-wrap: wrap;
+     gap:30px;
+     width: 600px;
+ }
+ .cards{
+   left: 1em;
    width: 270px;
  }
  .popupbox2{
    
     position: fixed;
     height:140px;
-    width:200px;
-    left:10vw;
+    width:280px;
+    left:35vw;
     top:340px;
  
   }
   .backbutton{
-    margin-top: 1em;
+    margin-top: 2em;
     font-size: 30px;
  }
  .blank{
     position: absolute;
-    top:10vw;
-    left:15vw;
+    top:15vw;
+    left:40vw;
     font-size: 5.8vw;
  
  }
@@ -193,6 +195,5 @@
  }
  #center{
     margin-top: 80px;
-    margin-left: 2em;
  }
  }
