@@ -22,7 +22,7 @@ function showtask() {
 }
 
 const newadd = document.getElementById("Add");
-const newcard = document.getElementById("cardnew");
+const newcard = document.getElementById("newcard");
 const newcard2 = document.getElementById("cardnew2");
 const back1 = document.getElementsByClassName("backbutton");
 const tittle5 = document.getElementById("tasklist");
@@ -47,7 +47,7 @@ function cardAdd() {
   
   deletebutton.classList.add("btn3");
   addnewbtn.classList.add("btn4");
-  cardnew1.classList.add("conatiner_child");
+  cardnew1.classList.add("cards");
   hrline.classList.add("hrlines")
 
   console.log(start);
@@ -112,17 +112,21 @@ function cardAdd() {
 
     Add2.addEventListener("click", () => {
       const p = document.createElement("p");
+      var markdone = document.createElement("button");
+
       p.classList.add("inline");
       tittle2.innerText = input3.value;
       popupbox2.style.display = "none";
-      var markdone = document.createElement("button");
+      
       itemlist.appendChild(p);
-      itemlist.classList.add("space");
-      markdone.innerText = "Done";
       p.appendChild(tittle2);
       p.appendChild(markdone);
+
+      itemlist.classList.add("space");
+      markdone.innerText = "Done";
       markdone.classList.add("mark");
       itembox.classList.remove("first");
+
       markdone.addEventListener("click", () => {
         Done();
       });
