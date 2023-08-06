@@ -1,180 +1,281 @@
 body{
-    padding: 0%;
-    margin: 0%;
     background-color: black;
-    color: #ffffff;
     overflow-x: hidden;
+    color: white;
+    
 }
-
-.blurpage{
-    filter: blur(5px);
-}
-
-/* #task-list{
-    filter: blur(5px);
-} */
-.addlistbutton{
-    height: 55px;
-    width: 55px;
-    position: absolute;
-    background-color: #25bfee;
-    font-size: 45px;
+#tasklist{
+   position: relative;
+   left: 2em; 
+    font-size: 60px;
     font-weight: bolder;
-    left: 25.5em;
-    top: 1.5em;
-    border-radius: 50%;   
+    
+}
+#list{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: system-ui;
+}
+#noitem{
+    position: absolute;
+    left: 3.4em;
+    font-size: 40px;
+    font-weight: 20;
+    font-family: system-ui;
+
+}
+
+
+.addlistbutton{
+   height: 55px;
+   width: 55px;
+   position: absolute;
+   background-color: #25bfee;
+   font-size: 45px;
+   font-weight: bolder;
+   left: 25.5em;
+   top: 1.1em;
+   border-radius: 50%;   
 }
 
 #buttonaddlist{
-    position: absolute;
-    left: 27em;
-    top: 1.3em; 
-    font-size: 45px;
-    font-weight: 200;
-    font-family: system-ui;  
+   position: absolute;
+   left: 27em;
+   top: 1em; 
+   font-size: 45px;
+   font-weight: 200;
+   font-family: system-ui;  
 }
 
-#task{
-    left: 2em; 
-    font-size: 60px;
-    position: absolute;
-    font-weight:bolder;     
-}
+ /* Second page */
 
-#list{
-    font-size: 50px;
-    position: absolute;
-    font-weight: 200;
-    font-family: system-ui;
+.first{
+    filter: blur(10px);
 }
-
-#no-item{
-    top:2.5em;
-    left: 3.3em;
-    font-size: 40px;
-    font-weight: 20;
-    position: absolute;
-    font-family: system-ui;
-}
-
-.pop-up-box {
-    width: 500px;
-    height: 250px;
+ .popupbox{
+  
     position: fixed;
-    box-shadow: 0px 0px 10px 1px #f7a3f9;
-    font-size: 25px;
-    text-align: center;
+    height:200px;
+    width:400px;
+    left:40vw;
+    top:180px;
+    z-index: 1;
     background-color: #00ffff;
     color: #ff0000;
     border-radius: 10px;
-    top: 40%;
-    left: 40%;
-    z-index: 1;
-}
-.show{
-    display: block;
-}
-
-.hide-box{
+    box-shadow: 1.5px 1px 2px 1px #f7a3f9;
     display: none;
-}
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+ }
+ 
+ .drop{
+    display: block;
+ }
 
-input{
+ #new{
+    margin-top: 10px;
+    font-size: 28px;
+ }
+
+ #cardnew{
     width: 300px;
     height: 30px;
-    border-radius: 5px;
+    font-size: 20px;
     text-align: center;
-    font-size: large;
+    border-radius: 5px;
+ }
+
+ #close{
+    margin-left: 50px;
+ }
+
+ .card-button{
+   width: 100px;
+   height: 30px;
+   background-color: #ff4800;
+   border-radius: 15px;
+   font-size: large;
+   color: #ffffff;
+   border: 0px;
 }
 
-.card-button{
-    width: 100px;
-    height: 30px;
-    background-color: #ff4800;
+ #box{
+   /* margin-top: 80px; */
+     display: flex;
+     flex-wrap: wrap;
+     gap:20px;
+     justify-content: space-between;
+     top: 9em;
+     left: 8em;
+     width: 1260px;
+     position: absolute;
+ }
+
+ .conatiner_child{
+   height: 350px;
+   width:250px;
+   border-radius: 10px;
+   box-shadow: 1.5px 1px 3px 1px #00ffff;
+   background-color: white;
+   color: black;
+   margin-bottom: 20px;
+ }
+
+ .hrlines{
+   height: 1px;
+   background-color: black;
+}
+
+ .hide{
+    display: none;
+ }
+
+ .btn4{
+   position: relative;
+   height: 25px;
+   width:50px;
+  color: black;
+  left:55%;
+  margin: 10px;
+ }
+
+ .btn3{
+   position: relative;
+   height: 25px;
+   width:50px;
+   left:55%;
+   color: rgb(202, 9, 9);
+ }
+
+ .mark{
+   border-radius: 5px;
+   background-color: #77f6f6;
+ }
+
+ /*------------------------secondpopup-----------------*/
+
+ .popupbox2{
+  
+   position: fixed;
+   height:140px;
+   width:260px;
+   left:40vw;
+   top:300px;
+   padding: 15px;
+   box-shadow: 1.5px 1.5px 2px 1px #00ffff;
+   background-color: #f7a3f9;
+   color: #ff0000;
+   border-radius: 15px;
+   display: none;
+   text-align: center;
+ }
+#new2{
+   margin-top: 10px;
+   font-size: 28px;
+}
+#cardnew2{
+   width: 180px;
+   height: 30px;
+   font-size: 20px;
+   text-align: center;
+   border-radius: 5px;
+}
+.Add2{
+   margin-top: 9px;
+   width: 80px;
+    margin: 8px;
     border-radius: 15px;
-    font-size: large;
+    background-color: #ff4800;
     color: #ffffff;
     border: 0px;
 }
-
-.closecard{
-    margin-left: 50px;
+.close2{
+   margin-top: 4px;
+   width: 80px; 
+   border-radius: 15px;
+   background-color: #ff4800;
+   color: #ffffff;
+   border: 0px;
 }
-
-.card-container{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    width: 1260px;
-    height: auto;
-    justify-content: space-between;
-    /* border: 2px solid red; */
-    /* background-color: #25bfee; */
-    top: 9em;
-    left: 8em;
-    /* gap: 20px; */
+.inline{
+   
+   display: flex;
+   font-size: 20px;
+   gap:10px;
+   justify-content: center;
+   align-items: baseline;
 }
-
-.cards{
-    width: 255px;
-    height: 350px;
-    border: 0px solid silver;
-    box-shadow: 0px 0px 10px 1px #00ffff;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+.mark{
+   height: 20px;
+   
 }
-
-.hrlines{
-    height: 1px;
-    background-color: black;
+.space{
+   line-height:2px;
 }
-
-.addlist{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    font-size: 30px;
-    border-radius: 50%;
-    border: 0px;
-    margin-top: 7.5em;
-    margin-left: 1.5em;
-    background-image: url("./addicon.png");
-    background-size: contain;
-    background-color: #ffffff;
+#center{
+   margin:auto;
+   width: 350px;
+   display: none;
+   margin-top: 5vw;
+   justify-content: center;
 }
-
-.delcard{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    object-fit: fill;
-    border: 0px;
-    border-radius: 50%;
-    margin-top: 17em;
-    margin-left: 6.5em;
-    background-image: url("./deleteicon.png");
-    background-size: contain;
-    background-color: #ffffff;   
+.backbutton{
+   margin-top: 1em;
+   color:#ffffff;
+   font-size: 3.5vw;
+   margin-left: 1em;
 }
-
-.popup-box2 {
-    width: 500px;
-    height: 250px;
-    position: fixed;
-    box-shadow: 0px 0px 10px 1px #00ffff;
-    font-size: 25px;
-    text-align: center;
-    background-color: #f7a3f9;
-    color: #ff0000;
-    border-radius: 10px;
-    top: 40%;
-    left: 40%;
-    z-index: 1;
+header{
+   display: flex;
+   height: 60px;
+   display: none;
+  justify-content: space-evenly;
+  gap:50px;
+  
 }
+.blank{
+   position: absolute;
+   top:8vh;
+   left:40vw;
+   text-align: center;
+   font-size: 4.8vw;
+   color: white;
 
-.closecard2{
-    margin-left: 50px;
+}
+.button4{
+   width: 18vw;
+   height: 6vh;
+   color: black;
+   position: absolute;
+   top:8vh;
+   right:3vw;
+   border:3px solid rgb(229, 215, 215);
+   border-radius: 15px;
+   background-color: black;
+   font-weight: bolder;
+   float:right;
+  
+}
+.delete{
+   background-image: url(./deleteicon.png);
+   background-size: cover;
+   width:30px;
+   height:30px;
+   border:none;
+   outline: none;
+   border-radius: 50%;
+   position: relative;
+   margin-left: 30px;
+   margin-top: 5vw;
+}
+.add1{
+   background-image: url(./addicon.png);
+   background-size: cover;
+   width:30px;
+   height:30px;
+   border:none;
+   outline: none;
+   border-radius: 50%;
 }
