@@ -11,11 +11,11 @@ let start = 0;
 
 function showtask() {
   count++;
-  main.setAttribute("class", "first");
+  main.setAttribute("class", "blur-Page");
   let addTaskpop = document.getElementById("pop-up");
   addTaskpop.setAttribute("class", " drop popupbox");
   addTaskpop.classList.remove("hide");
-  itembox.classList.add("first");
+  itembox.classList.add("blur-Page");
   if (count >= 1) {
     noitem.style.display = "none";
   }
@@ -33,7 +33,8 @@ const button4 = document.getElementsByClassName("button4");
 function addcard() {
 
   count++;
-  itembox.classList.remove("first");
+  
+  itembox.classList.remove("blur-Page");
   
   var cardnew1 = document.createElement("div");
   var cardtitle = document.createElement("h2");
@@ -43,8 +44,7 @@ function addcard() {
   var addnewbtn = document.createElement("button");
 
 
-  cardtitle.style.marginLeft = "30%";
-  
+  cardtitle.classList.add("cardnames")
   deletebutton.classList.add("btn3");
   addnewbtn.classList.add("btn4");
   cardnew1.classList.add("cards");
@@ -65,7 +65,7 @@ function addcard() {
   deletebutton.classList.add("delete");
   addnewbtn.classList.add("add1");
   addTaskpop.classList.add("hide");
-  main.classList.remove("first");
+  main.classList.remove("blur-Page");
 
   addnewbtn.addEventListener("click", () => {
     cardnew1.style.height = "auto";
@@ -124,7 +124,7 @@ function addcard() {
       itemlist.classList.add("space");
       markdone.innerText = "Done";
       markdone.classList.add("mark");
-      itembox.classList.remove("first");
+      itembox.classList.remove("blur-Page");
 
       markdone.addEventListener("click", () => {
         Done();
@@ -172,6 +172,6 @@ function addcard() {
 }
 
 function closetask() {
-  addTaskpop.setAttribute("class", "dropdown drop hide");
-  main.classList.remove("first");
+  addTaskpop.setAttribute("class", "popupbox drop hide");
+  main.classList.remove("blur-Page");
 }
