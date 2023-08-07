@@ -1,5 +1,5 @@
 @media screen and (min-width: 280px) and (max-width:700px){
-    body{
+    html,body{
        overflow-x: hidden;
        overflow-y: scroll;
     }
@@ -61,11 +61,16 @@
  #box{
       display: block;
       left: 2em;
+      width: 300px;
   }
  
  .cards{
     width: 250px;
    margin-left: 25px;
+ }
+
+ .cardnames{
+   margin-left: 30%;
  }
  .popupbox2{
    
@@ -98,7 +103,7 @@
  }
  @media screen and (min-width: 700px) and (max-width:1200px)
  {
-    body{
+    html,body{
        overflow-x: hidden;
        overflow-y: scroll;
     }
@@ -158,14 +163,17 @@
  }
  
  #box{
-     display: flex;
-     flex-wrap: wrap;
+     display: block;
      gap:30px;
-     width: 600px;
+     width: 300px;
  }
  .cards{
-   left: 1em;
-   width: 270px;
+   width: 600px;
+   margin-bottom: 40px;
+ }
+
+ .cardnames{
+   margin-left: 40%;
  }
  .popupbox2{
    
@@ -184,7 +192,7 @@
     position: absolute;
     top:15vw;
     left:40vw;
-    font-size: 5.8vw;
+    font-size: 60px;
  
  }
  .buttonfor{
@@ -194,6 +202,7 @@
     height: 50px;
  }
  #center{
-    margin-top: 80px;
+    margin-top: 100px;
+    width: 600px;
  }
  }
