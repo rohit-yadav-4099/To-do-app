@@ -30,7 +30,7 @@ const tittle6 = document.getElementsByClassName("button1");
 const blank = document.getElementsByClassName("blank");
 const button4 = document.getElementsByClassName("button4");
 
-function cardAdd() {
+function addcard() {
 
   count++;
   itembox.classList.remove("first");
@@ -77,7 +77,7 @@ function cardAdd() {
 
   function createItempopup(itemlist) {
 
-    var tittle2 = document.createElement("h3");
+    var itemname = document.createElement("h3");
     let body = document.querySelector("body");
     let popupbox2 = document.createElement("div");
     let tittle3 = document.createElement("h2");
@@ -94,14 +94,13 @@ function cardAdd() {
 
     input3.setAttribute("id", "cardnew2");
     tittle3.innerText = "Add the  List";
-    tittle2.innerText = input3.value;
+    itemname.innerText = input3.value;
 
 
     Add2.innerText = "Add";
-
     close2.innerText = "close";
 
-    itemlist.appendChild(tittle2);
+    itemlist.appendChild(itemname);
     body.appendChild(popupbox2);
     popupbox2.appendChild(tittle3);
     popupbox2.appendChild(input3);
@@ -115,11 +114,11 @@ function cardAdd() {
       var markdone = document.createElement("button");
 
       p.classList.add("inline");
-      tittle2.innerText = input3.value;
+      itemname.innerText = input3.value;
       popupbox2.style.display = "none";
       
       itemlist.appendChild(p);
-      p.appendChild(tittle2);
+      p.appendChild(itemname);
       p.appendChild(markdone);
 
       itemlist.classList.add("space");
@@ -131,9 +130,9 @@ function cardAdd() {
         Done();
       });
       function Done() {
-        tittle2.style.textDecoration = "line-through";
-        tittle2.style.color = "red";
-        tittle2.style.fontWeight = "bolder";
+        itemname.style.textDecoration = "line-through";
+        itemname.style.color = "red";
+        itemname.style.fontWeight = "bolder";
         markdone.remove();
       }
     });
