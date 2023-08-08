@@ -134,31 +134,23 @@ body{
     display: none;
  }
 
- .btn4{
+ /* .btn4{
    position: static;
-   height: 30px;
-   width:30px;
-   border-radius: 50%;
-  border: none;
+   height: 25px;
+   width:50px;
+  color: black;
   top: 100px;
-  /* margin-left:80%; */
+  left:55%;
   margin: 10px;
-  background-image: url(./addicon.png);
-  background-size: cover;
  }
 
  .btn3{
-   position: static;
-   height: 30px;
-   width:30px;
-   border: none;
-   border-radius: 50%;
-   margin-left:60%;
+   position: absolute;
+   height: 25px;
+   width:50px;
+   left:55%;
    color: rgb(202, 9, 9);
-   background-image: url(./deleteicon.png);
-   background-size: cover;
-   background-color: white;
- }
+ } */
 
  .mark{
    border-radius: 5px;
@@ -268,4 +260,28 @@ header{
    float:right;
   
 }
-
+.delete{
+   background-image: url(./deleteicon.png);
+   background-size: cover;
+   width:30px;
+   height:30px;
+   border:none;
+   outline: none;
+   border-radius: 50%;
+   position: relative;
+   margin-left: 12em;
+   margin-top: 90%;
+   background-color: white;
+}
+.add1{
+   background-image: url(./addicon.png);
+   background-size: cover;
+   width:30px;
+   height:30px;
+   border:none;
+   outline: none;
+   border-radius: 50%;
+   left: 1em;
+   /* margin-top: 18%; */
+   position: relative;
+}
