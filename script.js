@@ -60,8 +60,8 @@ function addcard() {
  
 
   cardtitle.innerText = newcard.value;
-  deletebutton.classList.add("delete");
-  addnewbtn.classList.add("add1");
+  deletebutton.classList.add("btn3");
+  addnewbtn.classList.add("btn4");
   addTaskpop.classList.add("hide");
   main.classList.remove("blur-Page");
 
