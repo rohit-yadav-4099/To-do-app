@@ -45,8 +45,6 @@ function addcard() {
 
 
   cardtitle.classList.add("cardnames")
-  deletebutton.classList.add("btn3");
-  addnewbtn.classList.add("btn4");
   cardnew1.classList.add("cards");
   hrline.classList.add("hrlines")
 
