@@ -47,7 +47,6 @@ body{
    font-family: system-ui;  
 }
 
- /* Second page */
 
 .blur-Page{
     filter: blur(10px);
@@ -127,7 +126,7 @@ body{
  }
 
  .hrlines{
-   height: 1px;
+   height: 2px;
    background-color: black;
 }
 
@@ -135,29 +134,29 @@ body{
     display: none;
  }
 
- .btn4{
-   position: relative;
+ /* .btn4{
+   position: static;
    height: 25px;
    width:50px;
   color: black;
+  top: 100px;
   left:55%;
   margin: 10px;
  }
 
  .btn3{
-   position: relative;
+   position: absolute;
    height: 25px;
    width:50px;
    left:55%;
    color: rgb(202, 9, 9);
- }
+ } */
 
  .mark{
    border-radius: 5px;
    background-color: #77f6f6;
  }
 
- /*------------------------secondpopup-----------------*/
 
  .popupbox2{
   
@@ -270,8 +269,9 @@ header{
    outline: none;
    border-radius: 50%;
    position: relative;
-   margin-left: 30px;
-   margin-top: 5vw;
+   margin-left: 12em;
+   margin-top: 90%;
+   background-color: white;
 }
 .add1{
    background-image: url(./addicon.png);
@@ -281,4 +281,7 @@ header{
    border:none;
    outline: none;
    border-radius: 50%;
+   left: 1em;
+   /* margin-top: 18%; */
+   position: relative;
 }
