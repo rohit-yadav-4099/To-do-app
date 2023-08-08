@@ -104,20 +104,18 @@
     color:white;
     font-size: 25px;
  }
-
  .blank{
     top:40vw;
     left:35vw;
     font-size: 7.8vw;
- }
 
+ }
  .buttonfor{
     margin-left: 240px;
     margin-top: -50px;
     width: 100px;
     height: 50px;
  }
- 
  #center{
     margin-top: 120px;
  }
@@ -239,13 +237,15 @@
     width: 600px;
  }
 
- .btn3{
-   position: static;
-   margin-left: 80%;
-   /* margin-top: 100px; */
+ .delete{
+   position: absolute;
+   margin-left: 37em;
+   margin-top: 240px;
 }
 
-.add4{
-   position: static;
+.add1{
+   left: 40em;
+   margin-top: 240px;
+   position: relative;
 }
  }
